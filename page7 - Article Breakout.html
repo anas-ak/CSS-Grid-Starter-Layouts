@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Article With Breakout</title>
+        <style>
+            article {
+                display: grid;
+                font-family: lato;
+                grid-template-columns: 
+                    [full-start] minmax(1em, 1fr)
+                    [main-start] minmax(0, 70em) [main-end]
+                    minmax(1em, 1fr) [full-end];
+                grid-gap: 1em;
+            }
+            
+            section {
+                grid-column: main;
+            }
+
+            figure {
+                grid-column: main;
+                text-align: center;
+                max-width: 90%;
+                justify-content: center;
+                align-content: center;
+            } 
+
+            body {
+                padding: 0.1em 0;
+            }
+
+            article > * {
+                background-color: #ebb6bb;
+                padding: 2em;
+            }
+
+            img {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="font-family: lato;">Article with Breakout</h1>
+        <article>
+            <section>
+                <h1>Waging War</h1>
+                <p>
+                    In the operations of war, where there are in the field a thousand swift chariots, as many heavy chariots, and a hundred thousand mail-clad soldiers, with provisions enough to carry them a thousand li, the expenditure at home and at the front, including entertainment of guests, small items such as glue and paint, and sums spent on chariots and armor, will reach the total of a thousand ounces of silver per day. Such is the cost of raising an army of 100,000 men.
+                </p>
+                <p>
+                    When you engage in actual fighting, if victory is long in coming, the men’s weapons will grow dull and their ardor will be damped. If you lay siege to a town, you will exhaust your strength. Again, if the campaign is protracted, the resources of the State will not be equal to the strain.
+                </p>
+
+                <p>
+                    Now, when your weapons are dulled, your ardor damped, your strength exhausted and your treasure spent, other chieftains will spring up to take advantage of your extremity. Then no man, however wise, will be able to avert the consequences that must ensue.
+                </p>
+            </section>
+            <figure>
+                <img src="sample.jpg" alt="some image">
+            </figure>
+            <section>
+                <p>
+                    Hence a wise general makes a point of foraging on the enemy. One cartload of the enemy’s provisions is equivalent to twenty of one’s own, and likewise a single picul of his provender is equivalent to twenty from one’s own store.
+                </p>
+                <p>
+                    Now in order to kill the enemy, our men must be roused to anger; that there may be advantage from defeating the enemy, they must have their rewards.
+                </p>
+                <p>
+                    Therefore in chariot fighting, when ten or more chariots have been taken, those should be rewarded who took the first. Our own flags should be submitted for those of the enemy, and the chariots mingled and used in conjunction with ours. The captured soldiers should be kindly treated and kept.
+                </p>
+                <p>
+                    In war, then, let your great object be victory, not lengthy campaigns. Thus it may be known that the leader of armies is the arbiter of the people’s fate. The man on whom it depends whether the nation shall be in peace or in peril.
+                </p>
+            </section>
+        </article>
+    </body>
+</html>

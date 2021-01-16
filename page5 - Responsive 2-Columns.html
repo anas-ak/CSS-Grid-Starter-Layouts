@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsive 2-Columns</title>
+        <style>
+            body {
+                font-family: lato;
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-rows: 4vw 10vw 24vw 10vw;
+                grid-gap: 1em;
+            }
+
+            h1 {
+                grid-column: 1 / span 5;
+            }
+
+            header,
+            footer {
+                grid-column: 1 / span 5;
+            }
+
+            main {
+                grid-column: 1 / span 3;
+            }
+
+            aside {
+                grid-column: span 2;
+            }
+
+            @media (max-width: 700px) {
+                main, aside {
+                    grid-column: 1 / span 5;
+                }
+            }
+
+            body {
+                margin: 0 auto;
+                max-width: 80em;
+                padding: 1em 0;
+            }
+
+            header, 
+            main, 
+            aside, 
+            footer {
+                background: #aaaaaa;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            header, 
+            footer {
+                height: 10vw;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Responsive 2-Columns</h1>
+        <header>Header</header>
+        <main>Main</main>
+        <aside>Aside</aside>
+        <footer>Footer</footer>
+    </body>
+</html>

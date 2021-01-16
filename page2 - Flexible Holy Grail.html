@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexible Holy Grail</title>
+        <style>
+
+            .grid {
+                display: grid;
+                grid-template-columns: 150px auto 150px;
+                grid-template-rows: repeat(4, 100px);
+                grid-gap: 1em;
+            }
+            
+            * { font-family: lato; }
+
+            header, 
+            aside, 
+            article, 
+            footer {
+                background: #c7c6c6;
+                padding: 1em;
+                font-size: 14px;
+            }
+
+            header, footer {
+                grid-column: 1 / 4;
+            }
+
+            aside, article {
+                grid-row: 2 / 4;
+            }
+
+            body {
+                margin: 0 auto;
+                max-width: 82em;
+                padding: 1em 0;
+            }
+
+            .grid > * {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Flexible Holy Grail</h1>
+        <div class='grid'>
+            <header>
+                Header
+            </header>
+
+            <aside class='sidebar-left'>
+                Left Sidebar 
+            </aside>
+
+            <article>
+                Article 
+            </article>
+
+            <aside class='sidebar-right'>
+                Right Sidebar 
+            </aside>
+
+            <footer>
+                Footer
+            </footer>
+        </div>
+    </body>
+</html>

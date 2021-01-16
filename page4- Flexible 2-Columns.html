@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexible 2-Columns</title>
+        <style>
+
+            body {
+                font-family: lato; 
+                display: grid;
+                grid-template-columns: 75% 25%;
+                grid-template-rows: 4vw 8vw 20vw 8vw;
+                grid-gap: 1em;
+            
+            }
+
+            header, 
+            footer {
+                grid-column:  1 / span 2;
+            }
+
+            body {
+                margin: 0 auto;
+                max-width: 70em;
+                padding: 0.5em 0;
+            }
+
+            header,
+            main, 
+            aside, 
+            footer {
+                background: #aeaaaa;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Flexible 2-Columns</h1>
+        <header> Header </header>
+        <main> Main </main>
+        <aside> Sidebar </aside>
+        <footer> Footer </footer>
+
+    </body>
+</html>
