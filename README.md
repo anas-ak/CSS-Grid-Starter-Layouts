@@ -1,7 +1,7 @@
 # CSS-Grid-Starter-Layouts
 
-[January 16, 2021 - Begin]
-[January 17, 2021 - Readme Updated]
+[January 16, 2021 - Begin] <br>
+[January 17, 2021 - Readme Updated] <br>
 
 <p>
 This is a collection of starter templates for layouts and patterns using CSS Grid. 
