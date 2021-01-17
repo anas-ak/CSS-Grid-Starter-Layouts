@@ -8,14 +8,12 @@ This is a collection of starter templates for layouts and patterns using CSS Gri
 The idea here is to show off what the technique is capable of doing and provide a starting point that can be re-purposed for other projects.
 </p>
 
-<h3>Flexible Holy Grail</h3>
 <img src="1.png">
 <p>The classic three-column layout where two sidebars and a container holding the body copy is sandwiched between a full-width header and footer.</p>
 
-<h3>2-Column-Layout with Header and Footer</h3>
-<img src="3.png>
+<img src="3.png">
 <p>A classic blog layout where one column is for the post and the other for a sidebar.</p>
           
-<h3>Evenly Distributed, Fit as Needed</h3>
+<h4>Evenly Distributed, Fit as Needed</h4>
 <img src="5.png">
 <p>Elements flow into the layout and end when there are no more.</p>
